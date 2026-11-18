@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Orbit Fitness - Loja</title>
+  <link rel="stylesheet" href="loja.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-esq">
+      <a href="index.html" class="seta-voltar">←</a>
+      <div class="logo">Orbit <span class="verde">Fitness</span></div>
+    </div>
+
+    <div class="busca-header">
+      <span>🔍</span>
+      <input type="text" placeholder="O que você procura hoje?">
+    </div>
+
+    <div class="header-dir">
+      <a href="carrinho.html" class="btn-sacola">
+        🛍️ <span class="badge-qtd">2</span>
+      </a>
+    </div>
+  </header>
+
+  <hr class="linha-topo">
+
+  <main class="container layout-loja">
+    <!-- Barra Lateral de Filtros -->
+    <aside class="sidebar">
+      <h4>CATEGORIAS</h4>
+      <ul class="lista-categorias">
+        <li class="ativa">Todos <span>✓</span></li>
+        <li>Suplementos</li>
+        <li>Acessórios</li>
+        <li>Vestuário</li>
+      </ul>
+
+      <hr>
+
+      <h4>FAIXA DE PREÇO</h4>
+      <div class="filtro-preco">
+        <label><input type="checkbox"> Até R$ 50</label>
+        <label><input type="checkbox"> R$ 50 - R$ 100</label>
+        <label><input type="checkbox"> R$ 100 - R$ 200</label>
+        <label><input type="checkbox"> Acima de R$ 200</label>
+      </div>
+    </aside>
+
+    <!-- Grade de Produtos -->
+    <section>
+      <div class="topo-catalogo">
+        <p>Mostrando <strong>6 produtos</strong> encontrados</p>
+        <div>
+          Ordenar por:
+          <select>
+            <option>Mais Vendidos</option>
+            <option>Menor Preço</option>
+            <option>Maior Preço</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid-produtos">
+        <!-- Produto 1 -->
+        <div class="card-produto">
+          <a href="produto.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXahV98OXaN45VwGbpURl7iMNmLCEzZXNEO1cQ0BfupA&s" alt="Whey Protein"></a>
+          <div class="produto-info">
+            <div class="avaliacao-linha">
+              <span class="estrelas">★★★★★</span>
+              <span class="reviews">4.9 (48)</span>
+            </div>
+            <h3><a href="produto.html">Whey Protein isolado </a></h3>
+            <div class="preco-linha">
+              <span class="preco-prod"><small>R$</small> 149,90</span>
+              <a href="carrinho.html" class="btn-add-mini">🛍️</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="card-produto">
+          <a href="produto.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9gk2ZgK1aN5f2h_4_UgvZ5DxibNFLGqvRtsDIyFESw&s=10" alt="Creatina"></a>
+          <div class="produto-info">
+            <div class="avaliacao-linha">
+              <span class="estrelas">★★★★★</span>
+              <span class="reviews">4.9 (48)</span>
+            </div>
+            <h3><a href="produto.html">Creatina Monohidratada 300g</a></h3>
+            <div class="preco-linha">
+              <span class="preco-prod"><small>R$</small> 89,90</span>
+              <a href="carrinho.html" class="btn-add-mini">🛍️</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="card-produto">
+          <a href="produto.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMATZz6wF8agPzy-GJCZ4gE1DQu1uPMwnNKGPsM9UNSg&s" alt="BCAA"></a>
+          <div class="produto-info">
+            <div class="avaliacao-linha">
+              <span class="estrelas">★★★★☆</span>
+              <span class="reviews">4.9 (48)</span>
+            </div>
+            <h3><a href="produto.html">BCAA 2:1:1 Recover 120 Cap</a></h3>
+            <div class="preco-linha">
+              <span class="preco-prod"><small>R$</small> 69,90</span>
+              <a href="carrinho.html" class="btn-add-mini">🛍️</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="card-produto">
+          <a href="produto.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxhYwZR6ADVw0Eq2zJauKSle2FnwAMBbDnbglX4wO4nQ&s=10" alt="Pré-Treino"></a>
+          <div class="produto-info">
+            <div class="avaliacao-linha">
+              <span class="estrelas">★★★★★</span>
+              <span class="reviews">4.9 (48)</span>
+            </div>
+            <h3><a href="produto.html">Pré-Treino Raze </a></h3>
+            <div class="preco-linha">
+              <span class="preco-prod"><small>R$</small> 119,90</span>
+              <a href="carrinho.html" class="btn-add-mini">🛍️</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="card-produto">
+          <a href="produto.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMoMS-8JQWghcLWZnaCwOvHFu94HCF07HI5xdBLhLfUQ&s=10" alt="Garrafa Shaker"></a>
+          <div class="produto-info">
+            <div class="avaliacao-linha">
+              <span class="estrelas">★★★★☆</span>
+              <span class="reviews">4.9 (48)</span>
+            </div>
+            <h3><a href="produto.html">Garrafa Shaker Térmica 700ml</a></h3>
+            <div class="preco-linha">
+              <span class="preco-prod"><small>R$</small> 39,90</span>
+              <a href="carrinho.html" class="btn-add-mini">🛍️</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="card-produto">
+          <a href="produto.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyEGt5i6q9KV9Flcj4MwMB3qhnDMRxFzVnHqTCbsGXpg&s=10" alt="Luvas de Boxe"></a>
+          <div class="produto-info">
+            <div class="avaliacao-linha">
+              <span class="estrelas">★★★★☆</span>
+              <span class="reviews">4.9 (48)</span>
+            </div>
+            <h3><a href="produto.html">Luvas para Treinos de Boxe...</a></h3>
+            <div class="preco-linha">
+              <span class="preco-prod"><small>R$</small> 67,90</span>
+              <a href="carrinho.html" class="btn-add-mini">🛍️</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

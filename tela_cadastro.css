@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0c0d10;
+    color: #ffffff;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- LADO ESQUERDO (FUNDO ESCURO E IMAGEM) --- */
+.lado-esquerdo {
+    width: 50%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                url('https://i1.sndcdn.com/artworks-9nTvrPTVyzQHLGo5-5XvM3A-t1080x1080.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #a3ff12;
+}
+
+.texto-hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #a3ff12;
+    margin-bottom: 15px;
+}
+
+.texto-hero p {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 450px;
+}
+
+.copyright {
+    color: #666666;
+    font-size: 12px;
+}
+
+/* --- LADO DIREITO (FORMULÁRIO) --- */
+.lado-direito {
+    width: 50%;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lado-direito h2 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* ESTRUTURA DOS CAMPOS */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.linha-dupla {
+    display: flex;
+    gap: 15px;
+}
+
+.campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo.total {
+    width: 100%;
+}
+
+label {
+    font-size: 12px;
+    color: #aaaaaa;
+    margin-bottom: 6px;
+}
+
+/* ESTILO DOS INPUTS E SELECT */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select {
+    background-color: #16181f;
+    border: 1px solid #252833;
+    border-radius: 4px;
+    padding: 12px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #a3ff12;
+}
+
+/* CHECKBOX */
+.termos-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #cccccc;
+}
+
+.termos-box a {
+    color: #a3ff12;
+    text-decoration: underline;
+}
+
+/* BOTÃO DE SUBMIT */
+button {
+    background-color: #a3ff12;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #8ce600;
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #888888;
+}
+
+footer a {
+    color: #a3ff12;
+    text-decoration: none;
+    font-weight: bold;
+}

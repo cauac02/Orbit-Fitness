@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Orbit Fitness - Configurações</title>
+  <link rel="stylesheet" href="painel.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="logo">Orbit <span class="verde">Fitness</span></div>
+    <div class="perfil-sidebar">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qR7yDABVGTdWABQhJTM4c-TGAOMVBlgtkUhQglRPKg&s=10" alt="Renato Cariani">
+      <h3>Renato Cariani</h3>
+      <span class="badge-plano">PREMIUM</span>
+      <small>Membro desde: Mar 2024</small>
+    </div>
+
+    <nav class="menu-lateral">
+      <a href="dashboard.html">⊞ Dashboard</a>
+      <a href="meus-treinos.html">📊 Meus Treinos</a>
+      <a href="pagamentos.html">💳 Pagamentos</a>
+      <a href="loja.html">🛍️ Produtos</a>
+      <a href="configuracoes.html" class="ativo">⚙️ Configurações</a>
+    </nav>
+  </aside>
+
+  <div class="main-area">
+    <header class="topbar">
+      <div class="busca-top">
+        <span>🔍</span>
+        <input type="text" placeholder="Buscar treinos, aulas, produtos...">
+      </div>
+      <div class="topbar-dir">
+        <a href="lembretes.html" class="btn-sino">🔔</a>
+        <div class="user-mini">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qR7yDABVGTdWABQhJTM4c-TGAOMVBlgtkUhQglRPKg&s=10" alt="Renato Cariani">
+          <span>RENATO CARIANI</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="conteudo">
+      <div class="header-pagina">
+        <h1>CONFIGURAÇÕES DE CONTA</h1>
+        <p>Gerencie seus dados pessoais, senha, preferências de treino e notificações</p>
+      </div>
+
+      <div class="grid-dash">
+        <div>
+          <!-- Dados Pessoais -->
+          <div class="card" style="margin-bottom:25px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+              <h2 style="margin:0;">DADOS PESSOAIS</h2>
+              <button type="button" class="btn-borda" style="padding:6px 12px;">Habilitar Edição</button>
+            </div>
+
+            <form>
+              <div class="form-grid-2">
+                <div class="campo-cfg">
+                  <label>NOME COMPLETO</label>
+                  <input type="text" value="Renato Cariani">
+                </div>
+                <div class="campo-cfg">
+                  <label>E-MAIL</label>
+                  <input type="email" value="renato.cariani@orbitfitness.com.br">
+                </div>
+              </div>
+
+              <div class="form-grid-3">
+                <div class="campo-cfg">
+                  <label>TELEFONE</label>
+                  <input type="text" value="(11) 98765-4321">
+                </div>
+                <div class="campo-cfg">
+                  <label>DATA DE NASCIMENTO</label>
+                  <input type="text" value="10/06/1976">
+                </div>
+                <div class="campo-cfg">
+                  <label>CPF</label>
+                  <input type="text" value="123.456.789-00">
+                </div>
+              </div>
+
+              <div style="text-align:right;">
+                <button type="submit" class="btn-verde">Salvar Alterações</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Alterar Senha -->
+          <div class="card">
+            <h2>ALTERAR SENHA</h2>
+            <form>
+              <div class="form-grid-3">
+                <div class="campo-cfg">
+                  <label>SENHA ATUAL</label>
+                  <input type="password" value="••••••••">
+                </div>
+                <div class="campo-cfg">
+                  <label>NOVA SENHA</label>
+                  <input type="password" placeholder="Digite a nova senha">
+                </div>
+                <div class="campo-cfg">
+                  <label>CONFIRMAR NOVA SENHA</label>
+                  <input type="password" placeholder="Repita a nova senha">
+                </div>
+              </div>
+              <div style="text-align:right;">
+                <button type="submit" class="btn-borda">Atualizar Senha</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <!-- Preferências de Notificação -->
+          <div class="card" style="margin-bottom:25px;">
+            <h2>PREFERÊNCIAS DE NOTIFICAÇÃO</h2>
+            <div class="switch-linha"><span>Notificações por E-mail</span><input type="checkbox" checked></div>
+            <div class="switch-linha"><span>Notificações por Push (App)</span><input type="checkbox" checked></div>
+            <div class="switch-linha"><span>Alertas de Treino via SMS</span><input type="checkbox"></div>
+            <div class="switch-linha" style="border:none;"><span>Newsletter e Novidades</span><input type="checkbox"></div>
+          </div>
+
+          <!-- Preferências de Treino -->
+          <div class="card" style="margin-bottom:25px;">
+            <h2>PREFERÊNCIAS DE TREINO</h2>
+            <div class="campo-cfg" style="margin-bottom:14px;">
+              <label>OBJETIVO PRINCIPAL</label>
+              <select>
+                <option>Hipertrofia & Definição</option>
+                <option>Emagrecimento</option>
+                <option>Condicionamento Físico</option>
+              </select>
+            </div>
+            <div class="campo-cfg" style="margin-bottom:14px;">
+              <label>NÍVEL DE EXPERIÊNCIA</label>
+              <select>
+                <option>Avançado</option>
+                <option>Intermediário</option>
+                <option>Iniciante</option>
+              </select>
+            </div>
+            <div class="campo-cfg">
+              <label>HORÁRIO PREFERENCIAL</label>
+              <select>
+                <option>Manhã (07:00 - 09:00)</option>
+                <option>Tarde (14:00 - 17:00)</option>
+                <option>Noite (18:00 - 21:00)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Zona de Perigo -->
+          <div class="card">
+            <h2>ZONA DE PERIGO</h2>
+            <p style="color:#808696; font-size:11px; line-height:1.5;">
+              Ao excluir a sua conta, todos os seus dados de progresso e histórico de treinos serão permanentemente apagados.
+            </p>
+            <button type="button" class="btn-perigo">Excluir Minha Conta</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

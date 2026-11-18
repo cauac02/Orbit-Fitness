@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Orbit Fitness - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="card-login">
+        <!-- Logo -->
+        <div class="logo">Orbit<span>.Fitness</span></div>
+
+        <!-- Títulos -->
+        <h2>Bem-vindo de volta</h2>
+        <p class="subtitulo">Acesse sua conta.</p>
+
+        <form>
+            <!-- E-mail -->
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <div class="input-container foco-verde">
+                    <span class="icon">✉</span>
+                    <input type="email" id="email" placeholder="gabriel.silva@email.com" required>
+                    <span class="icon-check">✔</span>
+                </div>
+            </div>
+
+            <!-- Senha -->
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <div class="input-container">
+                    <span class="icon">🔒</span>
+                    <input type="password" id="senha" placeholder="••••••••••••" required>
+                    <span class="icon-eye">👁</span>
+                </div>
+            </div>
+
+            <!-- Opções (Lembrar + Esqueceu a senha) -->
+            <div class="opcoes-login">
+                <label class="switch-box">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                    <span class="label-text">Lembrar acesso</span>
+                </label>
+                <a href="#" class="esqueci">ESQUECEU A SENHA?</a>
+            </div>
+
+            <!-- Botão Entrar -->
+            <button type="submit" class="btn-entrar">ENTRAR NA CONTA</button>
+        </form>
+
+        <!-- Divisor -->
+        <div class="divisor">
+            <span>ou continue com</span>
+        </div>
+
+        <!-- Botões Sociais -->
+        <div class="botoes-sociais">
+            <button type="button" class="btn-social">
+                <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google"> Google
+            </button>
+            <button type="button" class="btn-social">
+                <img src="https://www.svgrepo.com/show/511330/apple.svg" alt="Apple"> Apple
+            </button>
+        </div>
+
+        <!-- Rodapé -->
+        <footer>
+            Não tem uma conta? <a href="tela_cadastro.html">CRIAR UMA AGORA</a>
+        </footer>
+    </div>
+
+</body>
+</html>

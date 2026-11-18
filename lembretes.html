@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbit Fitness - Central de Lembretes</title>
+  <link rel="stylesheet" href="lembretes.css">
+</head>
+<body>
+
+  <!-- 1. CABEÇALHO -->
+  <header>
+    <div class="header-esq">
+      <a href="index.html" class="seta-voltar">←</a>
+      <div class="logo">Orbit <span class="verde">Fitness</span></div>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="Pagina_Bem-Vindo.html">Home</a>
+      <a href="Pagina_Bem-Vindo.html">Modalidades</a>
+      <a href="planos.html" class="ativo">Planos</a>
+      <a href="professores.html">Professores</a>
+      <a href="loja.html">Loja</a>
+    </nav>
+  </header>
+
+  <hr class="linha-topo">
+
+  <!-- 2. CONTEÚDO PRINCIPAL -->
+  <main class="container layout-lembretes">
+
+    <!-- Barra Lateral de Filtros -->
+    <aside class="sidebar">
+      <h4>FILTROS</h4>
+      <ul class="lista-filtros">
+        <li class="ativo">Todos</li>
+        <li>Treinos</li>
+        <li>Pagamentos</li>
+        <li>Avisos</li>
+        <li>Sistema</li>
+      </ul>
+    </aside>
+
+    <!-- Área Direita (Lembretes + Formulário) -->
+    <section class="conteudo-lembretes">
+      
+      <!-- Cabeçalho da Seção -->
+      <div class="topo-secao">
+        <div>
+          <h1>CENTRAL DE LEMBRETES</h1>
+          <p>Mantenha-se informado sobre seus treinos, pagamentos e avisos gerais.</p>
+        </div>
+        <button type="button" class="btn-marcar-lidos">Marcar todos como lidos</button>
+      </div>
+
+      <!-- Lista de Lembretes -->
+      <div class="lista-notificacoes">
+        
+        <!-- Item 1 (Não lido - Borda Verde) -->
+        <div class="card-lembrete nao-lido">
+          <div class="lembrete-esq">
+            <div class="icone-box verde">📊</div>
+            <div>
+              <h3>Treino de Pernas - Amanhã às 07:00</h3>
+              <small>Há 2 horas • <span class="verde">Treinos</span></small>
+            </div>
+          </div>
+          <div class="lembrete-dir">
+            <span class="ponto-verde"></span>
+            <span class="seta-item">›</span>
+          </div>
+        </div>
+
+        <!-- Item 2 (Não lido - Borda Verde) -->
+        <div class="card-lembrete nao-lido">
+          <div class="lembrete-esq">
+            <div class="icone-box verde">💳</div>
+            <div>
+              <h3>Pagamento do plano vence em 3 dias</h3>
+              <small>Há 5 horas • <span class="verde">Pagamentos</span></small>
+            </div>
+          </div>
+          <div class="lembrete-dir">
+            <span class="ponto-verde"></span>
+            <span class="seta-item">›</span>
+          </div>
+        </div>
+
+        <!-- Item 3 (Lido) -->
+        <div class="card-lembrete">
+          <div class="lembrete-esq">
+            <div class="icone-box">🔔</div>
+            <div>
+              <h3>Nova aula de Boxe disponível</h3>
+              <small>Ontem • <span class="verde">Avisos</span></small>
+            </div>
+          </div>
+          <div class="lembrete-dir">
+            <span class="seta-item">›</span>
+          </div>
+        </div>
+
+        <!-- Item 4 (Lido) -->
+        <div class="card-lembrete">
+          <div class="lembrete-esq">
+            <div class="icone-box">📅</div>
+            <div>
+              <h3>Avaliação física agendada - 20/09</h3>
+              <small>Há 2 dias • <span class="verde">Treinos</span></small>
+            </div>
+          </div>
+          <div class="lembrete-dir">
+            <span class="seta-item">›</span>
+          </div>
+        </div>
+
+        <!-- Item 5 (Lido) -->
+        <div class="card-lembrete">
+          <div class="lembrete-esq">
+            <div class="icone-box">🏷️</div>
+            <div>
+              <h3>Promoção: 20% OFF em suplementos</h3>
+              <small>Há 3 dias • <span class="verde">Avisos</span></small>
+            </div>
+          </div>
+          <div class="lembrete-dir">
+            <span class="seta-item">›</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Caixa: Criar Novo Lembrete -->
+      <div class="box-criar">
+        <h2>CRIAR NOVO LEMBRETE</h2>
+
+        <form class="form-lembrete">
+          <div class="linha-dupla">
+            <div class="campo">
+              <label for="titulo">Título do Lembrete</label>
+              <input type="text" id="titulo" placeholder="Ex: Treino de Funcional" required>
+            </div>
+            <div class="campo">
+              <label for="data">Data / Horário</label>
+              <input type="text" id="data" placeholder="Ex: 20/09 às 18:00" required>
+            </div>
+          </div>
+
+          <div class="linha-dupla">
+            <div class="campo">
+              <label for="tipo">Tipo de Lembrete</label>
+              <select id="tipo">
+                <option>Treinos</option>
+                <option>Pagamentos</option>
+                <option>Avisos</option>
+                <option>Sistema</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <input type="text" id="mensagem" placeholder="Escreva os detalhes...">
+            </div>
+          </div>
+
+          <div>
+            <button type="submit" class="btn-verde">CRIAR LEMBRETE</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- 3. RODAPÉ COMPLETO -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-sobre">
+        <h3>Orbit <span class="verde">Fitness</span></h3>
+        <p>Treinos sérios para resultados extraordinários. Junte-se à elite da força e alcance novos patamares de performance física.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>NAVEGAÇÃO</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#modalidades">Modalidades</a>
+        <a href="index.html#planos">Planos</a>
+        <a href="professores.html">Professores</a>
+        <a href="loja.html">Suplementos</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>LEGAL</h4>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Políticas</a>
+        <a href="#">Parceiros</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>CONTATO & ENDEREÇO</h4>
+        <p>contato@orbitfitness.com</p>
+        <p>(11) 99999-8888</p>
+        <p style="margin-top: 10px;">Rua Athenas, 200 - Centro<br>Athenas - SP, 13500-000</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-base">
+      <p>© 2026 ORBIT FITNESS. Todos os direitos reservados.</p>
+      <div class="redes">
+        <span>📷</span>
+        <span>📘</span>
+        <span>▶️</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

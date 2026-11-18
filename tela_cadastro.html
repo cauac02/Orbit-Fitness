@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Orbit Fitness</title>
+    <link rel="stylesheet" href="tela_cadastro.css">
+</head>
+<body>
+
+    <div class="lado-esquerdo">
+        <div class="logo">Orbit <span>Fitness</span></div>
+        <div class="texto-hero">
+            <h1>CADASTRE-SE</h1>
+            <p>Venha fazer parte da comunidade que não aceita desculpas. Faça seu cadastro rápido e selecione seu plano ideal para começar hoje mesmo.</p>
+        </div>
+        <div class="copyright">© 2026 Orbit. Todos os direitos reservados.</div>
+    </div>
+
+
+    <div class="lado-direito">
+        <h2>CRIAR CONTA ORBIT</h2>
+        <p class="subtitulo">Insira seus dados para iniciar a jornada de treinos.</p>
+
+        <form>
+
+            <div class="campo total">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Nome..." required>
+            </div>
+
+            <div class="linha-dupla">
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder= "..." required>
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" placeholder="(--) _____-____ "required>
+                </div>
+            </div>
+
+           
+            <div class="linha-dupla">
+                <div class="campo">
+                    <label for="CPF">CPF</label>
+                    <input type="text" id="CPF" placeholder="___.___.___-__" required>
+                </div>
+                <div class="campo">
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" id="data" required>
+                </div>
+            </div>
+
+     
+            <div class="linha-dupla">
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="........" required>
+                </div>
+                <div class="campo">
+                    <label for="confirmar">Confirme sua senha</label>
+                    <input type="password" id="confirmar" placeholder="........" required>
+                </div>
+            </div>
+
+      
+            <div class="campo total">
+                <label for="plano">Selecione seu Plano</label>
+                <select id="plano" name="plano">
+                    <option>Premium - R$ 129/mês</option>
+                    <option>Básico - R$ 89/mês</option>
+                    <option>Black - R$ 159/mês</option>
+                </select>
+            </div>
+
+        
+            <div class="termos-box">
+                <input type="checkbox" id="termos" required>
+                <label for="termos">Li e aceito os <a href="#">Termos de Uso</a> e políticas da Orbit.</label>
+            </div>
+
+            <button type="submit">CRIAR CONTA</button>
+        </form>
+
+        <footer>Já tem conta? <a href="login.html">Faça login</a></footer>
+    </div>
+
+</body>
+</html>

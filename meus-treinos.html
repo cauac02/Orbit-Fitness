@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Orbit Fitness - Meus Treinos</title>
+  <link rel="stylesheet" href="painel.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="logo">Orbit <span class="verde">Fitness</span></div>
+    <div class="perfil-sidebar">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qR7yDABVGTdWABQhJTM4c-TGAOMVBlgtkUhQglRPKg&s=10" alt="Renato Cariani">
+      <h3>Renato Cariani</h3>
+      <span class="badge-plano">PREMIUM</span>
+      <small>Membro desde: Mar 2024</small>
+    </div>
+
+    <nav class="menu-lateral">
+      <a href="dashboard.html">⊞ Dashboard</a>
+      <a href="meus-treinos.html" class="ativo">📊 Meus Treinos</a>
+      <a href="pagamentos.html">💳 Pagamentos</a>
+      <a href="loja.html">🛍️ Produtos</a>
+      <a href="configuracoes.html">⚙️ Configurações</a>
+    </nav>
+  </aside>
+
+  <div class="main-area">
+    <header class="topbar">
+      <div class="busca-top">
+        <span>🔍</span>
+        <input type="text" placeholder="Buscar treinos, aulas, produtos...">
+      </div>
+      <div class="topbar-dir">
+        <a href="lembretes.html" class="btn-sino">🔔</a>
+        <div class="user-mini">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qR7yDABVGTdWABQhJTM4c-TGAOMVBlgtkUhQglRPKg&s=10" alt="Renato Cariani">
+          <span>RENATO CARIANI</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="conteudo">
+      <div class="header-pagina">
+        <h1>MEUS TREINOS</h1>
+        <p>Acompanhe sua rotina semanal de atividades e progresso</p>
+      </div>
+
+      <!-- Grade de 7 Dias -->
+      <div class="dias-semana-grid">
+        <div class="card-dia hoje">
+          <div class="dia-topo"><span>SEG</span><span>●</span></div>
+          <h4>Peito & Tríceps</h4>
+          <small class="verde">Hoje</small>
+        </div>
+        <div class="card-dia">
+          <div class="dia-topo"><span>TER</span></div>
+          <h4>Costas & Bíceps</h4>
+          <small>Planejado</small>
+        </div>
+        <div class="card-dia">
+          <div class="dia-topo"><span>QUA</span></div>
+          <h4>Pernas Completo</h4>
+          <small>Planejado</small>
+        </div>
+        <div class="card-dia">
+          <div class="dia-topo"><span>QUI</span></div>
+          <h4>Descanso</h4>
+          <small>Planejado</small>
+        </div>
+        <div class="card-dia">
+          <div class="dia-topo"><span>SEX</span></div>
+          <h4>Superiores</h4>
+          <small>Planejado</small>
+        </div>
+        <div class="card-dia">
+          <div class="dia-topo"><span>SÁB</span></div>
+          <h4>Cardio de Alta Int.</h4>
+          <small>Planejado</small>
+        </div>
+        <div class="card-dia">
+          <div class="dia-topo"><span>DOM</span></div>
+          <h4>Descanso</h4>
+          <small>Planejado</small>
+        </div>
+      </div>
+
+      <div class="grid-dash">
+        <!-- Treino de Hoje -->
+        <div class="card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <h2 style="margin-bottom:4px;">TREINO DE HOJE - PEITO & TRÍCEPS</h2>
+              <small style="color:#808696; font-size:11px;">Duração estimada: 65 minutos | 340 kcal</small>
+            </div>
+            <button class="btn-verde">▶ Começar</button>
+          </div>
+
+          <div class="exercicios-lista">
+            <div class="item-exercicio">
+              <div class="ex-esq">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=100" alt="Supino">
+                <div>
+                  <h4>Supino Reto c/ Barra</h4>
+                  <small>4 séries x 10 repetições • <span class="verde">60s de descanso</span></small>
+                </div>
+              </div>
+              <span>›</span>
+            </div>
+
+            <div class="item-exercicio">
+              <div class="ex-esq">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=100" alt="Crucifixo">
+                <div>
+                  <h4>Crucifixo Inclinado c/ Halteres</h4>
+                  <small>4 séries x 12 repetições • <span class="verde">45s de descanso</span></small>
+                </div>
+              </div>
+              <span>›</span>
+            </div>
+
+            <div class="item-exercicio">
+              <div class="ex-esq">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=100" alt="Tríceps">
+                <div>
+                  <h4>Tríceps Testa na Polia</h4>
+                  <small>3 séries x 15 repetições • <span class="verde">45s de descanso</span></small>
+                </div>
+              </div>
+              <span>›</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Próxima Avaliação Física -->
+        <div class="card">
+          <h2>PRÓXIMA AVALIAÇÃO FÍSICA</h2>
+          <div class="box-avaliacao-fisica">
+            <h3>12 DIAS</h3>
+            <small style="color:#cccccc;">Sexta-feira, 20 Mar às 18:00</small>
+          </div>
+          <p style="color:#808696; font-size:11px; line-height:1.5; margin-bottom:20px;">
+            Certifique-se de estar adequadamente hidratado para a bioimpedância. Evite treinos intensos nas 12h anteriores.
+          </p>
+          <button class="btn-borda" style="width:100%;">Reagendar Avaliação</button>
+        </div>
+      </div>
+
+      <!-- Histórico de Treinos -->
+      <div class="card">
+        <h2>HISTÓRICO DE TREINOS RECENTES</h2>
+        <table>
+          <thead>
+            <tr><th>DATA</th><th>TREINO</th><th>DURAÇÃO</th><th>AVALIAÇÃO</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>08 Mar 2026</td><td><strong>Costas & Bíceps</strong></td><td>58 min</td><td class="verde">☆ Excelente (Progressão)</td></tr>
+            <tr><td>06 Mar 2026</td><td><strong>Pernas Completo</strong></td><td>70 min</td><td class="verde">☆ Treino Intenso</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

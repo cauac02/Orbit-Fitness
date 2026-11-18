@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #453e3e; /* Fundo claro por fora igual ao exemplo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* CARTÃO ESCURO CENTRAL */
+.card-login {
+    background-color: #0b0c0e;
+    width: 100%;
+    max-width: 650px;
+    border-radius: 20px;
+    padding: 40px;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* LOGO */
+.logo {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.logo span {
+    color: #a3ff12;
+}
+
+/* TÍTULOS */
+h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.subtitulo {
+    color: #7a7f8d;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+/* CAMPOS DE INPUT */
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+label {
+    font-size: 11px;
+    color: #a0a5b5;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #12141a;
+    border: 1px solid #1e222d;
+    border-radius: 6px;
+    padding: 0 12px;
+    height: 44px;
+}
+
+/* Borda verde no campo com foco/selecionado */
+.input-container.foco-verde,
+.input-container:focus-within {
+    border-color: #a3ff12;
+}
+
+.input-container input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.icon, .icon-check, .icon-eye {
+    color: #555a66;
+    font-size: 14px;
+}
+
+.icon-check {
+    color: #a3ff12;
+}
+
+/* SWITCH LEMBRAR ACESSO + ESQUECEU A SENHA */
+.opcoes-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 25px 0;
+}
+
+.switch-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.switch-box input {
+    display: none;
+}
+
+.slider {
+    width: 36px;
+    height: 20px;
+    background-color: #1e222d;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: 3px;
+    left: 3px;
+    transition: 0.3s;
+}
+
+.switch-box input:checked + .slider {
+    background-color: #a3ff12;
+}
+
+.switch-box input:checked + .slider::before {
+    transform: translateX(16px);
+    background-color: #000000;
+}
+
+.label-text {
+    font-size: 12px;
+    color: #a0a5b5;
+}
+
+.esqueci {
+    color: #a3ff12;
+    font-size: 11px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+/* BOTÃO PRINCIPAL */
+.btn-entrar {
+    width: 100%;
+    background-color: #a3ff12;
+    color: #000000;
+    border: none;
+    height: 44px;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-entrar:hover {
+    background-color: #8ce600;
+}
+
+/* DIVISOR */
+.divisor {
+    position: relative;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.divisor::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #1e222d;
+}
+
+.divisor span {
+    position: relative;
+    background-color: #0b0c0e;
+    padding: 0 15px;
+    color: #555a66;
+    font-size: 11px;
+}
+
+/* BOTÕES SOCIAIS */
+.botoes-sociais {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    height: 42px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-social img {
+    width: 18px;
+    height: 18px;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #7a7f8d;
+}
+
+footer a {
+    color: #a3ff12;
+    font-weight: 800;
+    text-decoration: none;
+    margin-left: 4px;
+}

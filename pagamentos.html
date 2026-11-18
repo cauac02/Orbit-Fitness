@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Orbit Fitness - Pagamentos</title>
+  <link rel="stylesheet" href="painel.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="logo">Orbit <span class="verde">Fitness</span></div>
+    <div class="perfil-sidebar">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qR7yDABVGTdWABQhJTM4c-TGAOMVBlgtkUhQglRPKg&s=10" alt="Renato Cariani">
+      <h3>Renato Cariani</h3>
+      <span class="badge-plano">PREMIUM</span>
+      <small>Membro desde: Mar 2024</small>
+    </div>
+
+    <nav class="menu-lateral">
+      <a href="dashboard.html">⊞ Dashboard</a>
+      <a href="meus-treinos.html">📊 Meus Treinos</a>
+      <a href="pagamentos.html" class="ativo">💳 Pagamentos</a>
+      <a href="loja.html">🛍️ Produtos</a>
+      <a href="configuracoes.html">⚙️ Configurações</a>
+    </nav>
+  </aside>
+
+  <div class="main-area">
+    <header class="topbar">
+      <div class="busca-top">
+        <span>🔍</span>
+        <input type="text" placeholder="Buscar treinos, aulas, produtos...">
+      </div>
+      <div class="topbar-dir">
+        <a href="lembretes.html" class="btn-sino">🔔</a>
+        <div class="user-mini">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qR7yDABVGTdWABQhJTM4c-TGAOMVBlgtkUhQglRPKg&s=10" alt="Renato Cariani">
+          <span>RENATO CARIANI</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="conteudo">
+      <div class="header-pagina">
+        <h1>GESTÃO DE PAGAMENTOS</h1>
+        <p>Gerencie suas faturas, formas de pagamento e detalhes de assinatura</p>
+      </div>
+
+      <div class="grid-dash">
+        <div>
+          <!-- Banner Plano Ativo -->
+          <div class="card banner-plano-ativo">
+            <div>
+              <span class="badge-plano">PLANO ATIVO</span>
+              <h3>Plano Premium — R$ 129,00/mês</h3>
+              <small style="color:#808696; font-size:11px;">Próxima cobrança: 10 Abr 2026 &nbsp;|&nbsp; Método: Cartão final 4321</small>
+            </div>
+            <a href="index.html#planos" class="btn-verde">Trocar Plano</a>
+          </div>
+
+          <!-- Histórico de Transações -->
+          <div class="card">
+            <h2>HISTÓRICO DE TRANSAÇÕES</h2>
+            <table>
+              <thead>
+                <tr><th>DATA</th><th>DESCRIÇÃO</th><th>VALOR</th><th>MÉTODO</th><th>STATUS</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>10 Mar 2026</td><td><strong>Mensalidade Plano Premium</strong></td><td>R$ 129,00</td><td>Cartão final 4321</td><td><span class="badge-pago">PAGO</span></td></tr>
+                <tr><td>10 Fev 2026</td><td><strong>Mensalidade Plano Premium</strong></td><td>R$ 129,00</td><td>Cartão final 4321</td><td><span class="badge-pago">PAGO</span></td></tr>
+                <tr><td>10 Jan 2026</td><td><strong>Mensalidade Plano Premium</strong></td><td>R$ 129,00</td><td>Cartão final 4321</td><td><span class="badge-pago">PAGO</span></td></tr>
+                <tr><td>10 Dez 2025</td><td><strong>Mensalidade Plano Premium</strong></td><td>R$ 129,00</td><td>Cartão final 4321</td><td><span class="badge-pago">PAGO</span></td></tr>
+                <tr><td>10 Nov 2025</td><td><strong>Mensalidade Plano Premium</strong></td><td>R$ 129,00</td><td>Cartão final 4321</td><td><span class="badge-pago">PAGO</span></td></tr>
+                <tr><td>10 Out 2025</td><td><strong>Mensalidade Plano Premium</strong></td><td>R$ 129,00</td><td>Cartão final 4321</td><td><span class="badge-pago">PAGO</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <!-- Métodos de Pagamento -->
+          <div class="card" style="margin-bottom:25px;">
+            <h2>MÉTODOS DE PAGAMENTO</h2>
+            <div class="cartao-box">
+              <div style="display:flex; align-items:center; gap:12px;">
+                <span class="verde" style="font-size:18px;">💳</span>
+                <div>
+                  <h4 style="font-size:12px; font-weight:800;">Cartão final 4321</h4>
+                  <small style="color:#606575; font-size:10px;">Expira em 12/29 • Principal</small>
+                </div>
+              </div>
+              <span class="verde">●</span>
+            </div>
+            <button class="btn-borda" style="width:100%; border-color:#222532; color:#ffffff;">+ Novo Cartão</button>
+          </div>
+
+          <!-- Recibos & Faturas -->
+          <div class="card">
+            <h2>RECIBOS & FATURAS</h2>
+            <div class="fatura-item"><span>📄 Fatura - Março 2026</span><span class="verde">⬇</span></div>
+            <div class="fatura-item"><span>📄 Fatura - Fevereiro 2026</span><span class="verde">⬇</span></div>
+            <div class="fatura-item"><span>📄 Fatura - Janeiro 2026</span><span class="verde">⬇</span></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

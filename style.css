@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #ae9f9f; /* Fundo claro externo igual ao da foto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* CARTÃO PRINCIPAL ESCURO */
+.card {
+    background-color: #0b0c0e;
+    width: 100%;
+    max-width: 750px;
+    border-radius: 20px;
+    padding: 40px 50px;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* TOPO (SETA + TÍTULO PEQUENO) */
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.seta-voltar {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.topo h2 {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* CAIXA DO ÍCONE DE CHAVE */
+.icone {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(163, 255, 18, 0.08);
+    border: 1px solid #a3ff12;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* TÍTULO E TEXTO */
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #7a7f8d;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+/* CAMPO DE E-MAIL */
+label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #a0a5b5;
+    margin-bottom: 8px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    background-color: #12141a;
+    border: 1px solid #a3ff12; /* Borda verde limão igual ao exemplo */
+    border-radius: 6px;
+    padding: 0 14px;
+    height: 46px;
+    margin-bottom: 22px;
+}
+
+.icon-email {
+    color: #a3ff12;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.input-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    width: 100%;
+    font-size: 13px;
+}
+
+/* BOTÃO PRINCIPAL */
+button {
+    width: 100%;
+    background-color: #a3ff12;
+    color: #000000;
+    border: none;
+    height: 46px;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #8ce600;
+}
+
+/* LINK VOLTAR PARA O LOGIN */
+.voltar-login {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.voltar-login a {
+    color: #a3ff12;
+    font-size: 11px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.voltar-login a:hover {
+    text-decoration: underline;
+}

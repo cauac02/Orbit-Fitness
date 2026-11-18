@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #0b0c10;
+  color: #ffffff;
+}
+
+.verde {
+  color: #a3ff12;
+}
+
+.centro {
+  text-align: center;
+}
+
+.apagado {
+  color: #555a66;
+}
+
+/* --- BOTÕES --- */
+.btn-verde {
+  background-color: #a3ff12;
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.btn-verde:hover {
+  background-color: #8ce600;
+}
+
+.btn-verde.pequeno {
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.btn-verde.full {
+  width: 100%;
+  padding: 14px;
+  font-size: 12px;
+}
+
+.btn-borda {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #a3ff12;
+  color: #a3ff12;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.btn-borda:hover {
+  background-color: rgba(163, 255, 18, 0.1);
+}
+
+/* --- 1. HEADER --- */
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  color: #9aa0a6;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nav-menu a.ativo,
+.nav-menu a:hover {
+  color: #a3ff12;
+}
+
+.linha-topo {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* --- 2. CONTAINER & TOPO PLANOS --- */
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 60px 30px 80px 30px;
+}
+
+.topo-planos {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 55px auto;
+}
+
+.tag-verde {
+  color: #a3ff12;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.topo-planos h1 {
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 10px 0 15px 0;
+}
+
+.topo-planos p {
+  color: #808696;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* --- GRADE DOS 3 PLANOS --- */
+.grid-planos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: stretch;
+  margin-bottom: 80px;
+}
+
+.card-plano {
+  background-color: #12141c;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-plano.destaque {
+  border: 2px solid #a3ff12;
+  background-color: rgba(163, 255, 18, 0.02);
+}
+
+.plano-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-plano h3 {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.badge-popular {
+  background-color: #a3ff12;
+  color: #000000;
+  font-size: 9px;
+  font-weight: 900;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+.preco {
+  font-size: 42px;
+  font-weight: 900;
+  margin: 18px 0 12px 0;
+}
+
+.preco span {
+  font-size: 15px;
+  font-weight: 700;
+  color: #9aa0a6;
+}
+
+.preco small {
+  font-size: 12px;
+  font-weight: 400;
+  color: #606575;
+}
+
+.desc-plano {
+  color: #808696;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+.beneficios {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 35px;
+  flex: 1;
+}
+
+.beneficios li {
+  font-size: 12px;
+  color: #cccccc;
+}
+
+.beneficios li span {
+  color: #a3ff12;
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+/* --- 3. TABELA DE COMPARAÇÃO --- */
+.secao-tabela {
+  margin-bottom: 80px;
+}
+
+.secao-tabela h2,
+.secao-faq h2 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.tabela-box {
+  background-color: #12141c;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #171a24;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 800;
+  color: #808696;
+  padding: 18px 25px;
+}
+
+th.centro {
+  text-align: center;
+  color: #ffffff;
+}
+
+th.centro.verde {
+  color: #a3ff12;
+}
+
+td {
+  padding: 18px 25px;
+  font-size: 13px;
+  color: #cccccc;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+td:first-child {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* --- 4. DÚVIDAS FREQUENTES (FAQ) --- */
+.lista-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item {
+  background-color: #12141c;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 22px 26px;
+}
+
+.faq-pergunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.faq-pergunta h4 {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.faq-pergunta span {
+  color: #808696;
+  font-size: 18px;
+}
+
+.faq-item p {
+  color: #808696;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* --- 5. RODAPÉ COMPLETO --- */
+footer {
+  background-color: #08090c;
+  padding: 60px 30px 30px 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-grid {
+  max-width: 1150px;
+  margin: 0 auto 40px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+}
+
+.footer-sobre h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.footer-sobre p {
+  color: #808696;
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col h4 {
+  font-size: 12px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.footer-col a,
+.footer-col p {
+  color: #808696;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-col a:hover {
+  color: #a3ff12;
+}
+
+footer hr {
+  max-width: 1150px;
+  margin: 0 auto 25px auto;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-base {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #606575;
+  font-size: 12px;
+}
+
+.redes {
+  display: flex;
+  gap: 12px;
+}
+
+.redes span {
+  width: 32px;
+  height: 32px;
+  background-color: #14161f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+}

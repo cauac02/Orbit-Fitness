@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Orbit Fitness - Carrinho</title>
+  <link rel="stylesheet" href="loja.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-esq">
+      <a href="loja.html" class="seta-voltar">←</a>
+      <div class="logo">ORBIT<span class="verde">.FITNESS</span></div>
+    </div>
+
+    <div class="busca-header">
+      <span>🔍</span>
+      <input type="text" placeholder="O que você procura hoje?">
+    </div>
+
+    <nav class="nav-menu">
+      <a href="Pagina_Bem-Vindo.html">Home</a>
+      <a href="Pagina_Bem-Vindo.html#modalidades">Modalidades</a>
+      <a href="planos.html">Planos</a>
+      <a href="professores.html">Professores</a>
+      <a href="loja.html" class="ativo">Loja</a>
+    </nav>
+
+    <div class="header-dir">
+      <a href="carrinho.html" class="btn-sacola">🛍️ <span class="badge-qtd">3</span></a>
+      <a href="login.html" class="btn-verde pequeno">ÁREA DO ALUNO</a>
+    </div>
+  </header>
+
+  <hr class="linha-topo">
+
+  <main class="container">
+    <h1 class="titulo-pagina">Seu Carrinho</h1>
+
+    <div class="layout-carrinho">
+      <!-- Lista de Itens -->
+      <div>
+        <div class="tabela-header">
+          <span>PRODUTO</span>
+          <span>PREÇO</span>
+          <span>QTD</span>
+          <span>SUBTOTAL</span>
+        </div>
+
+        <!-- Item 1 -->
+        <div class="item-carrinho">
+          <div class="item-prod">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXahV98OXaN45VwGbpURl7iMNmLCEzZXNEO1cQ0BfupA&s" alt="Whey Protein Isolado">
+            <div>
+              <h4>Whey Protein Isolado</h4>
+              <small>Em estoque</small>
+            </div>
+          </div>
+          <span class="item-preco">R$ 149,90</span>
+          <div class="seletor-qtd" style="width: fit-content;">
+            <button>-</button><span>1</span><button>+</button>
+          </div>
+          <div class="item-subtotal">
+            <span>R$ 149,90</span>
+            <button class="btn-lixeira">🗑️</button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item-carrinho">
+          <div class="item-prod">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9gk2ZgK1aN5f2h_4_UgvZ5DxibNFLGqvRtsDIyFESw&s=10" alt="Creatina Monohidratada">
+            <div>
+              <h4>Creatina Monohidratada 300g</h4>
+              <small>Em estoque</small>
+            </div>
+          </div>
+          <span class="item-preco">R$ 89,90</span>
+          <div class="seletor-qtd" style="width: fit-content;">
+            <button>-</button><span>1</span><button>+</button>
+          </div>
+          <div class="item-subtotal">
+            <span>R$ 89,90</span>
+            <button class="btn-lixeira">🗑️</button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="item-carrinho">
+          <div class="item-prod">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMoMS-8JQWghcLWZnaCwOvHFu94HCF07HI5xdBLhLfUQ&s=10" alt="Garrafa Shaker">
+            <div>
+              <h4>Garrafa Shaker Térmica 700ml</h4>
+              <small>Em estoque</small>
+            </div>
+          </div>
+          <span class="item-preco">R$ 39,90</span>
+          <div class="seletor-qtd" style="width: fit-content;">
+            <button>-</button><span>1</span><button>+</button>
+          </div>
+          <div class="item-subtotal">
+            <span>R$ 39,90</span>
+            <button class="btn-lixeira">🗑️</button>
+          </div>
+        </div>
+
+        <a href="loja.html" class="voltar-link">← Continuar Comprando</a>
+      </div>
+
+      <!-- Resumo do Pedido -->
+      <aside class="box-resumo">
+        <h3>Resumo do Pedido</h3>
+        <div class="resumo-linha">
+          <span>Subtotal</span>
+          <strong style="color: #ffffff;">R$ 279,70</strong>
+        </div>
+        <div class="resumo-linha">
+          <span>Frete</span>
+          <strong class="verde">Grátis</strong>
+        </div>
+
+        <div class="cupom-box">
+          <input type="text" placeholder="Cupom de desconto">
+          <button class="btn-verde pequeno">Aplicar</button>
+        </div>
+
+        <div class="resumo-total">
+          <span>Total</span>
+          <strong>R$ 279,70</strong>
+        </div>
+
+        <a href="checkout.html" class="btn-verde full">FINALIZAR COMPRA</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-sobre">
+        <h3>Orbit <span class="verde">Fitness</span></h3>
+        <p>Treinos sérios para resultados extraordinários. Junte-se à elite da força e alcance novos patamares de performance física e suplementação de ponta.</p>
+      </div>
+      <div class="footer-col">
+        <h4>NAVEGAÇÃO</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#modalidades">Modalidades</a>
+        <a href="index.html#planos">Planos</a>
+        <a href="professores.html">Professores</a>
+        <a href="loja.html">Suplementos</a>
+      </div>
+      <div class="footer-col">
+        <h4>LEGAL</h4>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Políticas</a>
+      </div>
+      <div class="footer-col">
+        <h4>CONTATO & ENDEREÇO</h4>
+        <p>contato@orbitfitness.com.br</p>
+        <p>(11) 99999-8888</p>
+        <p style="margin-top: 8px;">Av. Paulista, 1500 - Bela Vista<br>São Paulo - SP, 01311-200</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

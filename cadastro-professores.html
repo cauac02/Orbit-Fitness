@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbit Fitness - Cadastro de Professor</title>
+  <link rel="stylesheet" href="cadastro-professores.css">
+</head>
+<body>
+
+  <!-- 1. CABEÇALHO -->
+  <header>
+    <div class="header-esquerda">
+      <a href="professores.html" class="seta-voltar">←</a>
+      <div class="logo">Orbit <span class="verde">Fitness</span></div>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="Pagina_Bem-Vindo.html">Home</a>
+      <a href="Pagina_Bem-Vindo.html#modalidades">Modalidades</a>
+      <a href="planos.html">Planos</a>
+      <a href="professores.html" class="ativo">Professores</a>
+      <a href="loja.html">Loja</a>
+    </nav>
+
+    <a href="cadastro.html" class="btn-verde pequeno">COMECE AGORA</a>
+  </header>
+
+  <hr class="linha-topo">
+
+  <!-- 2. CONTEÚDO PRINCIPAL (2 COLUNAS) -->
+  <main class="container-principal">
+    
+    <!-- COLUNA ESQUERDA: FORMULÁRIO -->
+    <div class="card-formulario">
+      <h1>CADASTRO DE PROFESSOR</h1>
+      <p class="subtitulo">Insira as credenciais do novo profissional para o corpo docente Orbit.</p>
+
+      <form>
+        <!-- Nome Completo -->
+        <div class="campo">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" placeholder="Ex: Roberto Carlos Silva" required>
+        </div>
+
+        <!-- E-mail e Telefone -->
+        <div class="linha-dupla">
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="roberto@orbitfitness.com" required>
+          </div>
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" placeholder="(11) 98888-7777" required>
+          </div>
+        </div>
+
+        <!-- Especialidade e CREF -->
+        <div class="linha-dupla">
+          <div class="campo">
+            <label for="especialidade">Especialidade</label>
+            <select id="especialidade" required>
+              <option value="" disabled selected>Selecione...</option>
+              <option>Musculação</option>
+              <option>CrossFit</option>
+              <option>Funcional</option>
+              <option>Boxe</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="cref">Registro CREF</label>
+            <input type="text" id="cref" placeholder="000000-G/SP" required>
+          </div>
+        </div>
+
+        <!-- Experiência -->
+        <div class="campo">
+          <label for="experiencia">Experiência (Anos)</label>
+          <input type="number" id="experiencia" placeholder="Ex: 5" required>
+        </div>
+
+        <!-- Biografia -->
+        <div class="campo">
+          <label for="biografia">Biografia</label>
+          <textarea id="biografia" rows="4" placeholder="Conte um pouco sobre a trajetória profissional, certificações e foco de treino..."></textarea>
+        </div>
+
+        <!-- Upload Foto de Perfil -->
+        <div class="campo">
+          <label>Foto de Perfil</label>
+          <label for="foto" class="upload-box">
+            <span>+ Clique para fazer upload de foto de alta resolução</span>
+            <input type="file" id="foto" accept="image/*" hidden>
+          </label>
+        </div>
+
+        <!-- Horários Disponíveis -->
+        <div class="campo">
+          <label>Horários Disponíveis</label>
+          <div class="horarios-grid">
+            <label class="check-box">
+              <input type="checkbox" checked>
+              <span>Manhã</span>
+            </label>
+            <label class="check-box">
+              <input type="checkbox" checked>
+              <span>Tarde</span>
+            </label>
+            <label class="check-box">
+              <input type="checkbox" checked>
+              <span>Noite</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Botão Enviar -->
+        <button type="submit" class="btn-verde full">ENVIAR FORMULÁRIO</button>
+      </form>
+    </div>
+
+    <!-- COLUNA DIREITA: TEXTO E IMAGEM -->
+    <div class="coluna-info">
+      <span class="tag-verde">CORPO DOCENTE ORBIT</span>
+      <h2>SÓ OS MELHORES<br>NO NOSSO TIME</h2>
+      <p>Garantimos um padrão de elite. Todos os professores Orbit passam por rigorosa verificação de CREF e histórico de resultados com atletas e alunos de alta performance.</p>
+
+      <div class="imagem-destaque">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReYEHrJUAvJXtSpUov3bewiAWmdv5StRBRCJDqp-zi1g&s=10" alt="Treinador orientando aluno">
+      </div>
+    </div>
+
+  </main>
+
+  <!-- 3. RODAPÉ COMPLETO -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-sobre">
+        <h3>Orbit <span class="verde">Fitness</span></h3>
+        <p>Treinos sérios para resultados extraordinários. Junte-se à elite da força e alcance novos patamares de performance física.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>NAVEGAÇÃO</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#modalidades">Modalidades</a>
+        <a href="index.html#planos">Planos</a>
+        <a href="professores.html">Professores</a>
+        <a href="#">Suplementos</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>LEGAL</h4>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Políticas</a>
+        <a href="#">Parceiros</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>CONTATO & ENDEREÇO</h4>
+        <p>contato@orbitfitness.com</p>
+        <p>(11) 99999-8888</p>
+        <p style="margin-top: 10px;">Rua Athenas, 200 - Centro<br>Athenas - SP, 13500-000</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-base">
+      <p>© 2026 ORBIT FITNESS. Todos os direitos reservados.</p>
+      <div class="redes">
+        <span>📷</span>
+        <span>📘</span>
+        <span>▶️</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

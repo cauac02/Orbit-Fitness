@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Orbit Fitness - Pagamento</title>
+  <link rel="stylesheet" href="loja.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-esq">
+      <a href="carrinho.html" class="seta-voltar">←</a>
+      <div class="logo">ORBIT<span class="verde">.FITNESS</span></div>
+    </div>
+
+    <div class="busca-header">
+      <span>🔍</span>
+      <input type="text" placeholder="O que você procura hoje?">
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#modalidades">Modalidades</a>
+      <a href="index.html#planos">Planos</a>
+      <a href="professores.html">Professores</a>
+      <a href="loja.html" class="ativo">Loja</a>
+    </nav>
+
+    <div class="header-dir">
+      <a href="carrinho.html" class="btn-sacola">🛍️ <span class="badge-qtd">3</span></a>
+      <a href="login.html" class="btn-verde pequeno">ÁREA DO ALUNO</a>
+    </div>
+  </header>
+
+  <hr class="linha-topo">
+
+  <main class="container">
+    <!-- Barra de Etapas -->
+    <div class="etapas-checkout">
+      <div class="etapa concluida"><span class="bolinha">✓</span> Carrinho</div>
+      <div class="traco"></div>
+      <div class="etapa concluida"><span class="bolinha">✓</span> Dados</div>
+      <div class="traco"></div>
+      <div class="etapa ativa"><span class="bolinha">3</span> Pagamento</div>
+      <div class="traco"></div>
+      <div class="etapa"><span class="bolinha">4</span> Confirmação</div>
+    </div>
+
+    <div class="layout-carrinho">
+      <!-- Formulário de Pagamento -->
+      <div>
+        <h1 class="titulo-pagina">Forma de Pagamento</h1>
+
+        <div class="metodos-pagamento">
+          <div class="metodo-card ativo">💳 Cartão de Crédito</div>
+          <div class="metodo-card">💠 PIX</div>
+          <div class="metodo-card">🧾 Boleto Bancário</div>
+        </div>
+
+        <form class="form-cartao">
+          <div class="campo-form">
+            <label>NÚMERO DO CARTÃO</label>
+            <input type="text" placeholder="0000 0000 0000 0000" required>
+          </div>
+
+          <div class="campo-form">
+            <label>NOME IMPRESSO NO CARTÃO</label>
+            <input type="text" placeholder="Como consta no cartão" required>
+          </div>
+
+          <div class="dupla-form">
+            <div class="campo-form">
+              <label>VALIDADE</label>
+              <input type="text" placeholder="MM / AA" required>
+            </div>
+            <div class="campo-form">
+              <label>CÓDIGO CVV</label>
+              <input type="text" placeholder="3 dígitos" required>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Resumo do Pedido Lateral -->
+      <aside class="box-resumo">
+        <h3>Resumo do Pedido</h3>
+
+        <div class="mini-item-resumo">
+          <div class="mini-item-esq">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXahV98OXaN45VwGbpURl7iMNmLCEzZXNEO1cQ0BfupA&s" alt="Whey Protein Isolado">
+            <div>
+              <h5>Whey Protein Isolado</h5>
+              <small>Qtd: 1</small>
+            </div>
+          </div>
+          <strong style="font-size: 12px;">R$ 149,90</strong>
+        </div>
+
+        <div class="mini-item-resumo">
+          <div class="mini-item-esq">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9gk2ZgK1aN5f2h_4_UgvZ5DxibNFLGqvRtsDIyFESw&s=10" alt="Creatina Monohidratada">
+            <div>
+              <h5>Creatina Monohidratada</h5>
+              <small>Qtd: 1</small>
+            </div>
+          </div>
+          <strong style="font-size: 12px;">R$ 89,90</strong>
+        </div>
+
+        <div class="mini-item-resumo">
+          <div class="mini-item-esq">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMoMS-8JQWghcLWZnaCwOvHFu94HCF07HI5xdBLhLfUQ&s=10" alt="Garrafa Shaker">
+            <div>
+              <h5>Garrafa Shaker Térmica</h5>
+              <small>Qtd: 1</small>
+            </div>
+          </div>
+          <strong style="font-size: 12px;">R$ 39,90</strong>
+        </div>
+
+        <div class="resumo-linha">
+          <span>Subtotal</span>
+          <span>R$ 279,70</span>
+        </div>
+        <div class="resumo-linha">
+          <span>Frete</span>
+          <span>R$ 15,00</span>
+        </div>
+
+        <div class="resumo-total">
+          <span>Total</span>
+          <strong>R$ 294,70</strong>
+        </div>
+
+        <button type="submit" class="btn-verde full">CONFIRMAR PAGAMENTO</button>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-sobre">
+        <h3>Orbit <span class="verde">Fitness</span></h3>
+        <p>Treinos sérios para resultados extraordinários. Junte-se à elite da força e alcance novos patamares de performance física e suplementação de ponta.</p>
+      </div>
+      <div class="footer-col">
+        <h4>NAVEGAÇÃO</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#modalidades">Modalidades</a>
+        <a href="index.html#planos">Planos</a>
+        <a href="professores.html">Professores</a>
+        <a href="loja.html">Suplementos</a>
+      </div>
+      <div class="footer-col">
+        <h4>LEGAL</h4>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Políticas</a>
+      </div>
+      <div class="footer-col">
+        <h4>CONTATO & ENDEREÇO</h4>
+        <p>contato@orbitfitness.com.br</p>
+        <p>(11) 99999-8888</p>
+        <p style="margin-top: 8px;">Rua Athenas, 200 - Centro<br>Athenas - SP, 13500-000</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

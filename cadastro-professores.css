@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #0b0c10;
+  color: #ffffff;
+}
+
+.verde {
+  color: #a3ff12;
+}
+
+/* --- BOTÕES --- */
+.btn-verde {
+  background-color: #a3ff12;
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.btn-verde:hover {
+  background-color: #8ce600;
+}
+
+.btn-verde.pequeno {
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.btn-verde.full {
+  width: 100%;
+  padding: 15px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* --- 1. HEADER --- */
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.header-esquerda {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.seta-voltar {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.seta-voltar:hover {
+  color: #a3ff12;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  color: #9aa0a6;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nav-menu a.ativo,
+.nav-menu a:hover {
+  color: #a3ff12;
+}
+
+.linha-topo {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* --- 2. CONTEÚDO PRINCIPAL (2 COLUNAS) --- */
+.container-principal {
+  max-width: 1200px;
+  margin: 50px auto 80px auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* Cartão do Formulário */
+.card-formulario {
+  background-color: #12141c;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.card-formulario h1 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.subtitulo {
+  color: #808696;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.linha-dupla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #a0a5b5;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  background-color: #171923;
+  border: 1px solid #252836;
+  border-radius: 6px;
+  padding: 12px 14px;
+  color: #ffffff;
+  font-size: 13px;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #a3ff12;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Upload Box Tracejada */
+.upload-box {
+  border: 1px dashed #a3ff12;
+  background-color: rgba(163, 255, 18, 0.03);
+  border-radius: 6px;
+  padding: 22px;
+  text-align: center;
+  color: #a3ff12;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: 0.2s;
+}
+
+.upload-box:hover {
+  background-color: rgba(163, 255, 18, 0.08);
+}
+
+/* Horários Disponíveis */
+.horarios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #171923;
+  border: 1px solid #252836;
+  border-radius: 6px;
+  padding: 12px 14px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.check-box input[type="checkbox"] {
+  accent-color: #a3ff12;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+/* Coluna Direita */
+.coluna-info {
+  padding-top: 20px;
+}
+
+.tag-verde {
+  color: #a3ff12;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.coluna-info h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.05;
+  margin: 12px 0 20px 0;
+}
+
+.coluna-info p {
+  color: #808696;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.imagem-destaque img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* --- 3. RODAPÉ COMPLETO (4 COLUNAS) --- */
+footer {
+  background-color: #08090c;
+  padding: 60px 30px 30px 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+}
+
+.footer-sobre h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.footer-sobre p {
+  color: #808696;
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col h4 {
+  font-size: 12px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.footer-col a,
+.footer-col p {
+  color: #808696;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-col a:hover {
+  color: #a3ff12;
+}
+
+footer hr {
+  max-width: 1200px;
+  margin: 0 auto 25px auto;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-base {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #606575;
+  font-size: 12px;
+}
+
+.redes {
+  display: flex;
+  gap: 12px;
+}
+
+.redes span {
+  width: 32px;
+  height: 32px;
+  background-color: #14161f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+}

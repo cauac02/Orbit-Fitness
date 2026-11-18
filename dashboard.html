@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Orbit Fitness - Dashboard</title>
+  <link rel="stylesheet" href="painel.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="logo">Orbit <span class="verde">Fitness</span></div>
+    <div class="perfil-sidebar">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qR7yDABVGTdWABQhJTM4c-TGAOMVBlgtkUhQglRPKg&s=10" alt="Renato Cariani">
+      <h3>Renato Cariani</h3>
+      <span class="badge-plano">PREMIUM</span>
+      <small>Membro desde: Mar 2024</small>
+    </div>
+
+    <nav class="menu-lateral">
+      <a href="dashboard.html" class="ativo">⊞ Dashboard</a>
+      <a href="meus-treinos.html">📊 Meus Treinos</a>
+      <a href="pagamentos.html">💳 Pagamentos</a>
+      <a href="loja.html">🛍️ Produtos</a>
+      <a href="configuracoes.html">⚙️ Configurações</a>
+    </nav>
+  </aside>
+
+  <div class="main-area">
+    <header class="topbar">
+      <div class="busca-top">
+        <span>🔍</span>
+        <input type="text" placeholder="Buscar treinos, aulas, produtos...">
+      </div>
+      <div class="topbar-dir">
+        <a href="lembretes.html" class="btn-sino">🔔</a>
+        <div class="user-mini">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qR7yDABVGTdWABQhJTM4c-TGAOMVBlgtkUhQglRPKg&s=10" alt="Renato Cariani">
+          <span>RENATO CARIANI</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="conteudo">
+      <div class="grid-dash">
+        <!-- Próximos Treinos -->
+        <div class="card">
+          <h2>PRÓXIMOS TREINOS DA SEMANA</h2>
+          <div class="lista-treinos-dash">
+            <div class="item-treino-dash destaque">
+              <div class="treino-esq">
+                <span class="tag-dia">SEG</span>
+                <div>
+                  <h4>Treino A - Peito, Ombro e Tríceps</h4>
+                  <small>Foco total e progressão de cargas</small>
+                </div>
+              </div>
+              <span class="treino-dir">07:00 - 08:30 ›</span>
+            </div>
+
+            <div class="item-treino-dash">
+              <div class="treino-esq">
+                <span class="tag-dia">TER</span>
+                <div>
+                  <h4>Treino B - Costas, Bíceps e Abdômen</h4>
+                  <small>Foco total e progressão de cargas</small>
+                </div>
+              </div>
+              <span class="treino-dir">07:00 - 08:30 ›</span>
+            </div>
+
+            <div class="item-treino-dash">
+              <div class="treino-esq">
+                <span class="tag-dia">QUA</span>
+                <div>
+                  <h4>Pernas Completo</h4>
+                  <small>Foco total e progressão de cargas</small>
+                </div>
+              </div>
+              <span class="treino-dir">18:00 - 19:00 ›</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progresso de Peso -->
+        <div class="card">
+          <div class="topo-peso">
+            <h2 style="margin:0;">PROGRESSO DE PESO</h2>
+            <small class="verde" style="font-weight:700;">Meta: 100 kg</small>
+          </div>
+
+          <div class="metricas-peso">
+            <div><small>Início</small><strong>122.4 kg</strong></div>
+            <div><small>Atual</small><strong class="verde">125.1 kg</strong></div>
+            <div><small>Evolução</small><strong class="ciano">-2.7 kg</strong></div>
+          </div>
+
+          <div class="grafico-barras">
+            <div class="coluna-barra"><div class="barra" style="height:25px;"></div><span>S1</span></div>
+            <div class="coluna-barra"><div class="barra" style="height:32px;"></div><span>S2</span></div>
+            <div class="coluna-barra"><div class="barra" style="height:42px;"></div><span>S3</span></div>
+            <div class="coluna-barra"><div class="barra" style="height:55px;"></div><span>S4</span></div>
+            <div class="coluna-barra"><div class="barra" style="height:48px;"></div><span>S5</span></div>
+            <div class="coluna-barra"><div class="barra" style="height:58px;"></div><span>S6</span></div>
+            <div class="coluna-barra"><div class="barra" style="height:70px;"></div><span>S7</span></div>
+            <div class="coluna-barra"><div class="barra" style="height:64px;"></div><span>S8</span></div>
+            <div class="coluna-barra"><div class="barra" style="height:75px;"></div><span>S9</span></div>
+            <div class="coluna-barra"><div class="barra ativa" style="height:95px;"></div><span>S10</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-dash" style="margin-bottom:0;">
+        <!-- Histórico de Pagamentos -->
+        <div class="card">
+          <h2>HISTÓRICO DE PAGAMENTOS</h2>
+          <table>
+            <thead>
+              <tr><th>DATA</th><th>VALOR</th><th>MÉTODO</th><th>STATUS</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>10 Mar 2026</td><td><strong>R$ 159,00</strong></td><td>Cartão final 4321</td><td><span class="badge-pago">PAGO</span></td></tr>
+              <tr><td>10 Fev 2026</td><td><strong>R$ 159,00</strong></td><td>Cartão final 4321</td><td><span class="badge-pago">PAGO</span></td></tr>
+              <tr><td>10 Jan 2026</td><td><strong>R$ 159,00</strong></td><td>Cartão final 4321</td><td><span class="badge-pago">PAGO</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Lembretes & Alertas -->
+        <div class="card">
+          <h2>LEMBRETES & ALERTAS</h2>
+          <div class="lista-alertas-dash">
+            <div class="alerta-linha"><span class="icone-alerta verde">💧</span> Beba 3.5L de água hoje</div>
+            <div class="alerta-linha"><span class="icone-alerta ciano">📅</span> Avaliação física agendada para Sexta</div>
+            <div class="alerta-linha"><span class="icone-alerta">🔔</span> Renovação do plano em 10 dias</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
